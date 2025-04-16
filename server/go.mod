@@ -14,6 +14,7 @@ exclude (
 )
 
 require (
+	github.com/francoispqt/gojay v1.2.13
 	github.com/stretchr/testify v1.10.0
 	golang.org/x/mod v0.24.0
 )
