@@ -15,6 +15,8 @@ exclude (
 
 require (
 	github.com/francoispqt/gojay v1.2.13
+	github.com/mattermost/logr/v2 v2.0.21
+	github.com/pkg/errors v0.8.1
 	github.com/stretchr/testify v1.10.0
 	golang.org/x/mod v0.24.0
 )
@@ -22,5 +24,8 @@ require (
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
+	github.com/wiggin77/merror v1.0.2 // indirect
+	github.com/wiggin77/srslog v1.0.1 // indirect
+	gopkg.in/natefinch/lumberjack.v2 v2.0.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
