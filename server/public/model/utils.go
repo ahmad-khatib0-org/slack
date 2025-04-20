@@ -22,10 +22,9 @@ import (
 	"time"
 	"unicode"
 
+	"github.com/ahmad-khatib0-org/slack/server/public/shared/i18n"
 	"github.com/pborman/uuid"
 	"github.com/pkg/errors"
-
-	"github.com/mattermost/mattermost/server/public/shared/i18n"
 )
 
 const (
@@ -85,6 +84,7 @@ func (sa StringArray) Contains(input string) bool {
 
 	return false
 }
+
 func (sa StringArray) Equals(input StringArray) bool {
 	if len(sa) != len(input) {
 		return false
@@ -222,8 +222,10 @@ func (si StringInterface) MarshalJSON() ([]byte, error) {
 	return json.Marshal((map[string]any)(si))
 }
 
-var translateFunc i18n.TranslateFunc
-var translateFuncOnce sync.Once
+var (
+	translateFunc     i18n.TranslateFunc
+	translateFuncOnce sync.Once
+)
 
 func AppErrorInit(t i18n.TranslateFunc) {
 	translateFuncOnce.Do(func() {
