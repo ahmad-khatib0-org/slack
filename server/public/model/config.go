@@ -3676,15 +3676,34 @@ const (
 // Allows read access if any PermissionSysconsoleRead* is allowed
 const ConfigAccessTagAnySysConsoleRead = "*_read"
 
-// Config fields support the 'access' tag with the following values corresponding to the
-// suffix of the associated PermissionSysconsole* permission Id: 'about', 'reporting',
-// 'user_management_users', 'user_management_groups', 'user_management_teams', 'user_management_channels',
-// 'user_management_permissions', 'environment_web_server', 'environment_database',
-// 'environment_elasticsearch', 'environment_file_storage', 'environment_image_proxy',
-// 'environment_smtp', 'environment_push_notification_server', 'environment_high_availability',
-// 'environment_rate_limiting', 'environment_logging', 'environment_session_lengths',
-// 'environment_performance_monitoring', 'environment_developer', 'site', 'authentication',
-// 'plugins', 'integrations', 'compliance', 'plugins', and 'experimental'.
+// Config fields support the 'access' tag with the following values corresponding
+// to the suffix of the associated PermissionSysconsole* permission Id:
+// 'about',
+// 'reporting',
+// 'user_management_users',
+// 'user_management_groups',
+// 'user_management_teams',
+// 'user_management_channels',
+// 'user_management_permissions',
+// 'environment_web_server',
+// 'environment_database',
+// 'environment_elasticsearch',
+// 'environment_file_storage',
+// 'environment_image_proxy',
+// 'environment_smtp',
+// 'environment_push_notification_server',
+// 'environment_high_availability',
+// 'environment_rate_limiting',
+// 'environment_logging',
+// 'environment_session_lengths',
+// 'environment_performance_monitoring',
+// 'environment_developer',
+// 'site',
+// 'authentication',
+// 'plugins',
+// 'integrations',
+// 'compliance',
+// 'plugins', and 'experimental'.
 // They grant read and/or write access to the config field
 // to roles without PermissionManageSystem.
 //
